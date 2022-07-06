@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UnoSquareChallenge</string>
+    <string name="title">title</string>
+    <string name="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus dolor non ipsum ultricies ultricies. In at lacus ultricies, lobortis lectus a, vehicula lacus.</string>
+    <string name="see_more">See more</string>
+    <string name="see_less">See less</string>
+    <string name="error_message">There was an error, please try again</string>
+</resources>

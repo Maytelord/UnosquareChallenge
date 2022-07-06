@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/postFragment">
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.unosquarechallenge.view.PostsFragment"
+        android:label="PostFragment"
+        tools:layout="@layout/post_fragment" >
+    </fragment>
+</navigation>
