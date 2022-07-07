@@ -64,11 +64,11 @@ class PostsFragment: Fragment() {
     }
 
     private fun postRVSetup() = with(binding.postListRV){
-        val comicLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        val postLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
 
         addItemDecoration(DividerItemDecoration(this.context, DividerItemDecoration.VERTICAL))
 
-        layoutManager = comicLayoutManager
+        layoutManager = postLayoutManager
         adapter = postAdapter
     }
 

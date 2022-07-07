@@ -17,7 +17,7 @@ class PostResponseFactory {
     }
 
     lateinit var postResponse: PostResponse
-    fun mockedComicResponse(): PostResponse {
+    fun mockedPostResponse(): PostResponse {
 
         postResponse = PostResponse()
 

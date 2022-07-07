@@ -10,7 +10,7 @@ import com.example.unosquarechallenge.R
 import com.example.unosquarechallenge.databinding.PostItemLayoutBinding
 import com.example.unosquarechallenge.model.PostItem
 
-class PostListAdapter : ListAdapter<PostItem, PostListAdapter.PostViewHolder>(ComicDiffCallback()) {
+class PostListAdapter : ListAdapter<PostItem, PostListAdapter.PostViewHolder>(PostDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
         return PostViewHolder(
@@ -62,7 +62,7 @@ class PostListAdapter : ListAdapter<PostItem, PostListAdapter.PostViewHolder>(Co
 
 
 
-private class ComicDiffCallback : DiffUtil.ItemCallback<PostItem>() {
+private class PostDiffCallback : DiffUtil.ItemCallback<PostItem>() {
     override fun areItemsTheSame(oldItem: PostItem, newItem: PostItem): Boolean {
         return oldItem.id == newItem.id
     }

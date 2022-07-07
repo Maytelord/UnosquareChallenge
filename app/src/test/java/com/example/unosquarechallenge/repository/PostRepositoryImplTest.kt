@@ -29,9 +29,9 @@ class PostRepositoryImplTest {
     }
 
     @Test
-    fun getComicsSuccessfulTest() = runBlocking {
+    fun getPostsSuccessfulTest() = runBlocking {
 
-        val response = postFactory.mockedComicResponse()
+        val response = postFactory.mockedPostResponse()
 
         Mockito.`when`(service.getPosts()).thenReturn(response)
 
@@ -40,7 +40,7 @@ class PostRepositoryImplTest {
     }
 
     @Test
-    fun getComicsErrorTest() = runBlocking {
+    fun getPostsErrorTest() = runBlocking {
 
         var errorResponse = ResultStatus.Error<PostResponse> ("An error occurred Exception", null)
         Mockito.`when`(service.getPosts()).thenThrow(RuntimeException("Exception"))
